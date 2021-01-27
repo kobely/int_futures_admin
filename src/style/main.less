@@ -1,0 +1,178 @@
+p {
+  margin: 0;
+  line-height: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tl {
+  text-align: left;
+}
+
+.color-dark {
+  color: #333;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-area {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+// 遮罩
+.loading-mask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+// 详情card内容区
+.card-hei {
+  min-height: 250px;
+
+  .ant-card-head {
+    padding: 0 18px;
+  }
+
+  .ant-card-body {
+    color: #999;
+  }
+}
+
+// 弹框确认，取消按钮
+.modal-button-wrap {
+  position: absolute !important;
+  right: 0px;
+  bottom: -55px;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: right;
+  border-radius: 0px 0px 4px 4px;
+  border-top: 1px solid rgb(232, 232, 232);
+  background: #fff;
+}
+
+// 滚动条样式
+::-webkit-scrollbar-track-piece {
+  background: #efefef;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d1da;
+  border-radius: 3.5px;
+}
+
+// 内容滚动条
+.ant-layout-content {
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+// 表格内文字省略
+.text-ellipsis {
+  display: inline-block;
+  overflow: hidden;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// 自定义结果toast
+.toast-wrapper {
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  z-index: 9999;
+  padding: 20px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+
+  i {
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .toast-tip {
+    margin-top: 10px;
+    max-width: 84px;
+    line-height: 1.2;
+    font-size: 14px;
+    color: #fff;
+  }
+}
+
+.bottom-button-wrap {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 99;
+  margin-left: -16px;
+  padding: 30px 20px;
+  border-top: 1px solid #e5e5e5;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+// 开户区域标题
+.open-account-section-title {
+  position: relative;
+  display: flex;
+  margin: 10px 0 20px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  &::before {
+    content: '';
+    margin-right: 10px;
+    width: 3px;
+    height: 18px;
+    background-color: #d3d3d3;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+}

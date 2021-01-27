@@ -1,0 +1,51 @@
+.modal-container {
+  margin: 0 auto;
+  width: 1100px;
+  .title-box {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 1100px;
+    padding: 20px 0 15px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #fff;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .mark {
+    margin-top: 10px;
+    color: #ff6600;
+  }
+}
+.field-content {
+  margin: 50px 0 30px;
+  width: 1100px;
+  dl {
+    margin: 0;
+    padding-top: 20px;
+    dt {
+      font-size: 16px;
+      color: #444;
+      .color-gray {
+        color: #999;
+      }
+    }
+    dd {
+      padding-left: 25px;
+      &.checked {
+        color: #1890ff;
+      }
+    }
+  }
+}
+.ant-radio-wrapper {
+  margin: 15px 20px 0 0;
+}
+/deep/ .ant-form-explain {
+  padding-left: 45px;
+}
+/deep/.ant-checkbox-wrapper {
+  margin-right: 8px;
+}

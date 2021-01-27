@@ -1,0 +1,16 @@
+.marginTopLoop(@i, @max) when (@i =< @max) {
+    .mt-@{i} {
+        margin-top: @i*1px;
+    }
+    .marginTopLoop(@i + 5, @max);
+}
+
+.marginRightLoop(@i, @max) when (@i =< @max) {
+    .mr-@{i} {
+        margin-right: @i*1px;
+    }
+    .marginRightLoop(@i + 5, @max);
+}
+
+.marginTopLoop(5, 50);
+.marginRightLoop(5,50);
