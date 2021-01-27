@@ -1,4 +1,4 @@
-# futuresapp_contract_admin
+# int_futures_admin
 
 ## Project setup
 
